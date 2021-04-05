@@ -1,7 +1,16 @@
 # Show Me Some Art
 
-There's more fine art on the Internet than ever. But though it's easy to find something you're looking for, it's much harder to find something you never knew you wanted. That
-s where ShowMeSomeArt comes in.
+There's more fine art on the Internet than ever. But though it's easy to find something you're looking for, it's much harder to find something you never knew you wanted. That's where ShowMeSomeArt comes in.
+
+## Stack
+
+UI: Figma
+Frontend:
+  - Framework: React
+  - Boilerplate: Create-React-App
+  - Styling: Tailwind CSS / Emotion
+Backend: Flask
+DB: CockroachDB
 
 ## Maintainers
 

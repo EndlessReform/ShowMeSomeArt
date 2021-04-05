@@ -30,13 +30,20 @@ const Homepage = () => {
         return s.substring(0, cut)
     }
 
+    function getWords(s, n) {
+        let split = s.split(" ");
+        return(split.slice(0, n).join(" "))
+    }
+    const firstLine = s => s.split("\n")[0]
+
     function sanitize(res) {
         return(res.data?.data?.map((artwork) => ({
             img_url: makePreviewImgSrc(artwork.image_id),
-            title: cutString(artwork.title, 20),
-            origin: cutString(artwork.place_of_origin, 20),
+            title: getWords(artwork.title, 10),
+            origin: artwork.place_of_origin,
             date: artwork.date_end,
-            artist: cutString(artwork.artist_display, 20)
+            artist: firstLine(artwork.artist_display),
+            id: artwork.id
         })))
     }
 

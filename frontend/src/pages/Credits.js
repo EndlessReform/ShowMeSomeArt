@@ -11,9 +11,13 @@ const Credits = () => (
     <div css={tw`bg-pink`}>
     <Layout css={tw``}>
         <Title>Credit where credit is due.</Title>
-        <BodyText>What, you thought we made 119,271 pieces of art ourselves? Hardly. We're indebted to the following sources:</BodyText>
-        <SectionHeader css={tw`mb-1`}>Assets</SectionHeader>
-        <BodyText>Bluu Next font, by the criminally underrated Velvetyne Type Foundry</BodyText>
+        <BodyText>ShowMeSomeArt would not have been possible without the generous contributions of:</BodyText>
+        <hr css={tw`border-black my-4`}/>
+        <SectionHeader css={tw`my-4`}>Our Sources</SectionHeader>
+        <BodyText>Many thanks to the Art Institute of Chicago for providing their API.</BodyText>
+        <hr css={tw`border-black my-4`}/>
+        <SectionHeader css={tw`mb-4`}>Our Sponsors</SectionHeader>
+        <BodyText>Thanks to Linode and Major League Hacking for providing $100 of credit towards hosting.</BodyText>
     </Layout>
     </div>
 )

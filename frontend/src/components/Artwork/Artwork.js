@@ -32,13 +32,9 @@ const Artwork = (props) => (
     <Container url={props.artwork.img_url} css={tw`text-white`}>
         <div css={tw`absolute w-full h-full opacity-0 hover:opacity-100 p-4`}>
             <div>
-            <h3 css={tw`text-3xl font-display pb-4`}>{props.artwork.title}</h3>
+            <h3 css={tw`text-3xl font-display pb-4 leading-tight`}>{props.artwork.title}</h3>
             <BodyText css={tw`text-pink`}>by</BodyText>
             <BodyText css={tw`mb-3`}>{props.artwork.artist}</BodyText>
-            <BodyText css={tw`text-pink`}>from</BodyText>
-            <BodyText css={tw`mb-3`}>{props.artwork.origin}</BodyText>
-            <BodyText css={tw`text-pink`}>made</BodyText>
-            <BodyText css={tw`mb-3`}>{props.artwork.date}</BodyText>
             <a css={tw`text-blue font-text no-underline`} href={`https://www.artic.edu/artworks/${props.artwork.id}`}>Check it out!</a>
             </div>
         </div>

@@ -4,13 +4,13 @@ There's more fine art on the Internet than ever. But though it's easy to find so
 
 ## Stack
 
-UI: Figma
-Frontend:
+- **UI**: Figma
+- **Frontend**:
   - Framework: React
   - Boilerplate: Create-React-App
   - Styling: Tailwind CSS / Emotion
-Backend: Flask
-DB: CockroachDB
+- **Backend**: Flask
+- **DB**: CockroachDB
 
 ## Maintainers
 
